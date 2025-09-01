@@ -31,8 +31,8 @@ print(f"Potencia: {a} ** {b} = {a ** b}")  # Salida: 125
 # Sirven para realizar combinaciones lógicas.
 
 # AND (and)
-x = True
-y = False
+x = True # 1
+y = False # 0
 print(f"AND: {x} and {y} = {x and y}")  # Salida: False
 
 # OR (or)
@@ -71,7 +71,7 @@ print(f"Menor o igual que: {a} <= {b} = {a <= b}")  # Salida: False
 edad = 15
 edad_minima_para_votar = 16
 puede_votar = edad >= edad_minima_para_votar
-print(f"¿La persona puede votar? {puede_votar}")  # Salida: True
+print(f"¿La persona puede votar? {puede_votar}")  # Salida: False
 
 # Ejemplo 2: Calcular el precio final después de aplicar un descuento.
 precio_original = 100
