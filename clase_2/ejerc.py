@@ -121,3 +121,8 @@ lista[1].append(sum(lista[1]))
 lista[2].append(sum(lista[2]))
 lista[3].append(sum(lista[3]))
 print(lista)
+
+
+var = "hola que tal".split(" ")
+var[0] = var[0].capitalize()
+print(var)
