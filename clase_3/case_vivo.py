@@ -30,20 +30,20 @@ diccionary_monedas = {'Dolar':'$','Euro':'€', 'Libra':'£'} # dolar, Dolar, Do
 # print(diccionary_monedas.get(moneda))
 # # Imprimo resultado.
 
-moneda_input = input("Ingrese la divisa que desea visualizar: ").capitalize() # str(a lo que ingreso.)
-moneda_seleccionada = diccionary_monedas.get(moneda_input, "La clave no existe")
-print(f"La divisa es: {moneda_seleccionada}")
+# moneda_input = input("Ingrese la divisa que desea visualizar: ").capitalize() # str(a lo que ingreso.)
+# moneda_seleccionada = diccionary_monedas.get(moneda_input, "La clave no existe")
+# print(f"La divisa es: {moneda_seleccionada}")
 
-diccionario_monedas = {'Dolar':'$','Euro':'€', 'Libra':'£'}
-while True:
-    divisa_ingresada = input("Ingresar divisa").capitalize()
-    valor = diccionario_monedas.get(divisa_ingresada)
-    if valor != None:
-        print(f"La divisa es {valor}")
-        break
-    print(f"La divisa {divisa_ingresada} ingresada no existe")
+# diccionario_monedas = {'Dolar':'$','Euro':'€', 'Libra':'£'}
+# while True:
+#     divisa_ingresada = input("Ingresar divisa").capitalize()
+#     valor = diccionario_monedas.get(divisa_ingresada)
+#     if valor != None:
+#         print(f"La divisa es {valor}")
+#         break
+#     print(f"La divisa {divisa_ingresada} ingresada no existe")
 
-print("OK")
+# print("OK")
 """
 A partir de una lista realizar las siguientes tareas sin modificar la lista original:
 
@@ -102,13 +102,21 @@ nombre = INPUT!!!
 edad = INPUT!!!!
 """
 # > <
-NOMBRE = input("Ingrese su nombre: ")
-EDAD = int(input("Ingrese su edad: "))
-nombre_diferente_a_str = NOMBRE != "****"
-rango_de_nombre_valido = len(NOMBRE) >= 4 and len(NOMBRE) < 8
-rango_de_edad_valida = EDAD > 5 and EDAD < 20
-edad_mayor_a_entero = EDAD * 3 > 35
+# NOMBRE = input("Ingrese su nombre: ")
+# EDAD = int(input("Ingrese su edad: "))
+# nombre_diferente_a_str = NOMBRE != "****"
+# rango_de_nombre_valido = len(NOMBRE) >= 4 and len(NOMBRE) < 8
+# rango_de_edad_valida = EDAD > 5 and EDAD < 20
+# edad_mayor_a_entero = EDAD * 3 > 35
 
-condicion = nombre_diferente_a_str and rango_de_nombre_valido and rango_de_edad_valida and edad_mayor_a_entero
-# snake_case nombrar_asi_a_las_variables
-print("La condicion final es: ", condicion)
+# condicion = nombre_diferente_a_str and rango_de_nombre_valido and rango_de_edad_valida and edad_mayor_a_entero
+# # snake_case nombrar_asi_a_las_variables
+# print("La condicion final es: ", condicion)
+
+
+var = 10
+def saludar():
+    global var
+    return print(var)
+
+print(saludar())
